@@ -1,6 +1,11 @@
-h1{
-    display: block;
+header{
+    text-align: center;
 }
 nav{
     display: inline-block;
 }
+h2{
+    margin-left: 20%;
+}
+
+https://lenguajecss.com/assets/css3-cheatsheet-2017.pdf
