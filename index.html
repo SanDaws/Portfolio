@@ -6,19 +6,19 @@
     <meta name="description" content="portafolio de servicios de Santiago C Giraldo">
     <meta name="keywords" content="portfolio, CV, Hoja de vida">
     <meta name="sitedomain" content="https://example.com" />
-    <meta name="organization" content="ReproRiwi" />
+    <meta name="organization" content="Portafolio" />
     <meta name="author" content="Santiago C Giraldo" />
     <meta name="designer" content="Santiago C Giraldo" />
     <meta name="robots" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
     <meta name="revisit-after" content="15days" />
 
-    <link rel="stylesheet" href="src/css/indexStyle.css">
+    <link rel="stylesheet" href="./src/css/indexStyle.css">
     <title>Resume</title>
 </head>
 <body>
-    <header>
-        <h1>Santiago Castro Giraldo</h1>
+    <header class="cont encabezado">
+        <h1 class="">Santiago Castro Giraldo</h1>
         <h2 class="sub-text"> Backend Developer</h2>
         <nav>
             <a href="#about-me">Sobre mi</a>
@@ -29,17 +29,29 @@
     <main>
         <section id="about-me">
             <h2>Sobre mi</h2>
-            <a href="./src/pages/aboutMe.html">ver mas </a>
+            <figure>
+                <img src="" alt="">
+            </figure>
+            <article class="descripcion-personal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aperiam modi cumque magni consequatur ipsa explicabo fuga nostrum, vel voluptas maiores. Cumque sit porro autem earum sed atque animi error.
+            Molestiae earum debitis obcaecati facere dicta autem, saepe eum sint exercitationem possimus aliquid quasi expedita veniam voluptas laboriosam corrupti provident natus, deleniti praesentium aut atque quam eveniet nihil. Accusantium, itaque.</article>
+            <a class="link verMas" href="./src/pages/aboutMe.html">ver mas <i class="bi bi-arrow-right"></i></a>
+            
 
         </section>
         <section id="work-resume">
             <h2>Proyectos</h2>
+            <article></article>
+            <a class="link verMas" href="./src/pages/aboutMe.html">ver mas <i class="bi bi-arrow-right"></i> </a>
 
         </section>
     </main>
     <footer>
-        <section id="contact">
-
+        <h2>Contacto</h2>
+        <section id="contact" class="list-redes-contacto">
+        <a class="link contacto" href="https://github.com/SanDaws" target="_blank"><i class="bi bi-github"></i></a>
+        <a class="link contacto" href="mailto:castrogiraldosantiago@gmail.com" target="_blank"><i class="bi bi-envelope-at"></i></a>
+        <a class="link contacto" href="https://wa.me/+573224495321?text=Hola%20quede%20interesado%20en%20tu%20portafolio" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a class="link contacto" href="tel:+573224495321"><i class="bi bi-telephone"></i></a>
         </section>
     </footer>
 </body>
