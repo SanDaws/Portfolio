@@ -11,6 +11,8 @@
 :root{
     --negro-noche:#020A12;
     --morado-noche:#190B28;
+    --azulOscuro-noche:#0A335C;
+    --blanco-noche: #EDF5FD;
 
 
     --fontPredet:"Poppins";
@@ -33,7 +35,7 @@ a{
     scroll-behavior: smooth;
     border-radius: 50% 50% 0 0;
     margin: 5px 2%;
-    background-image: linear-gradient(to bottom, var(--negro-noche) ,var(--morado-noche), #0A335C, #EDF5FD 99%);
+    background-image: linear-gradient(to bottom, var(--negro-noche) ,var(--morado-noche),var(--azulOscuro-noche), var(--blanco-noche) );
 }
 
 .ttl{
@@ -62,6 +64,29 @@ a{
     gap: 20%;
     position: fixed;
     bottom: 0;
+}
+/*about me*/
+.about-me{
+    height: 50vh ;
+}
+.about-me h2{
+    margin-left:6rem;
+}
+
+.about-me .sect.art-photo{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    
+}
+.about-me .sect.art-photo .art{
+    width: 40%;
+}
+.about-me .sect.art-photo figure{
+    width: 29%;
+    height: 100%;
+    object-position: bottom;
 }
 
 figure{
