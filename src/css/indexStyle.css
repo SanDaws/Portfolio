@@ -1,7 +1,16 @@
+/*importaciones*/
+/*Normalize*/
+@import url(./normalize.css);
+/*footer*/
+@import url(./footer.css);
+/*fuente poppins*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*boostrap para iconos*/
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 /*variables de ambiente*/
 :root{
+    --negro-noche:#020A12;
+    --morado-noche:#190B28;
 
 
     --fontPredet:"Poppins";
@@ -9,58 +18,58 @@
 /*Apartado General*/
 *{
     font-family: var(--fontPredet), sans-serif;
-    margin: 0;
+    
+}
+a{
+    text-decoration: none;
 }
 
-
-/*header*/
-header{
-    background-color: aquamarine;
-    border: 1px dotted blue;
+/*Header*/
+.cont-header{
     height: 100vh;
-    
-    margin: 0;
-}
-/*--Titulo y subtitulo(nombre y apellido)*/
-.cont.encabezado{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.text.nombre{
-    margin: 0;
-    max-width: fit-content;
-}
-.text.nombre.primerNombre{
-    width: 70%;
-    font-size: 11vw;
-}
-.text.nombre.apellido{
-    font-size: 7vw;
-    
-}
-/*--nav*/
-.nav-sects{
-    height: 20vh;
     display: flex;
     justify-content: center;
-    justify-content: space-evenly;
-    position:sticky;
+    align-items: center;
+    scroll-behavior: smooth;
+    border-radius: 50% 50% 0 0;
+    margin: 5px 2%;
+    background-image: linear-gradient(to bottom, var(--negro-noche) ,var(--morado-noche), #0A335C, #EDF5FD 99%);
+}
+
+.ttl{
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+.cont-header .ttl .fn{
+
+    font-size: 6rem;
+}
+.cont-header .ttl .ln{
+    font-size: 4rem;
+}
+
+
+/*espacio de navegacion*/
+.nav-sects{
+    background-color: aliceblue;
+    border: 2px solid black;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    position: fixed;
     bottom: 0;
 }
 
-.list-redes-contacto{
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-
+figure{
+    overflow: hidden;
+    object-position: top;
 }
-
-.link.contc{
-    font-size: 150%;
+img{
+    overflow: hidden;
+    
+    width: 10%;
 }
-
-
-
-
-/* https://lenguajecss.com/assets/css3-cheatsheet-2017.pdf */

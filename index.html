@@ -17,39 +17,59 @@
     <title>Resume</title>
 </head>
 <body>
-    <header class="cont encabezado">
-        <h1 class="text nombre primerNombre">Santiago</h1>
-        <h2 class="text nombre apellido">Castro Giraldo</h2>
-        <h3 class="text sub"> Backend Developer</h3>
+    <header>
+        <section class="cont-header">
+            <article class="ttl">
+                <h1 class="ttl fn">Santiago</h1>
+                <h2 class="ttl ln">Castro Giraldo</h2>
+                <h3 class="ttl sub"> Backend Developer</h3>
+            </article>
+            
+            <nav class="nav-sects" >
+                <a class="link" href="#about-me">Sobre mi</a>
+                <a class="link" href="#work-resume">Proyectos</a>
+                <a class="link" href="#contact">Contacto</a>
+            </nav>
+        </section>
         
-        <nav class="nav-sects" >
-            <a class="link sects" href="#about-me">Sobre mi</a>
-            <a class="link sects" href="#work-resume">Proyectos</a>
-            <a class="link sects" href="#contact">Contacto</a>
-        </nav>
+        
     </header>
-    <main>
+    
+    <main><!-- Resumen de menos 500 palabras sobre mi -->
         
         <section id="about-me">
-            <!-- Resumen de menos 500 palabras sobre mi -->
-            <h2>Sobre mi</h2>
-            <figure>
-                <img src="" alt="">
-            </figure>
-            <article class="descripcion-personal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aperiam modi cumque magni consequatur ipsa explicabo fuga nostrum, vel voluptas maiores. Cumque sit porro autem earum sed atque animi error.
-            Molestiae earum debitis obcaecati facere dicta autem, saepe eum sint exercitationem possimus aliquid quasi expedita veniam voluptas laboriosam corrupti provident natus, deleniti praesentium aut atque quam eveniet nihil. Accusantium, itaque.</article>
-            <a class="link verMas" href="./src/pages/aboutMe.html">ver mas <i class="bi bi-arrow-right"></i></a>
             
+            <h2>Sobre mi</h2>
+            <!-- pequeño resumen sobre mi -->
+            <article class="art pers-foto">
+                <p>
+                    Hola!, Me llamo Santiago, Aunque suelen decirme "DAWS", soy Programador por vocación y técnico en computación, pero no es a lo único que me dedico, soy estudiante de ingeniería de sistemas, 
+                    Tengo un gusto por cocinar y retarme a hacer platos interesantes, hacer ejercicio y mantenerme en forma para una buena salud, la música, jugar videojuegos, salir a caminar y muchas cosas más.
+                </p>
+                <p>Personalmente siempre he sido fanático de los sistemas desde muy joven, siempre me ha atraído la idea de los sistemas funcionales y he encontrado la programación como método para solucionar problemas</p>
+                <a class="link verMas" href="./src/pages/aboutMe.html">ver mas <i class="bi bi-arrow-right"></i></a>
+            </article>
+
+            <!-- imagen -->
+            <figure>
+                <img src="./public/img/me.webp" alt="">
+            </figure>
 
         </section>
+<!-- apartado de proyectos personales en github -->
         <section id="work-resume">
             <!-- 6 proyectos en los que he trabajado -->
             <h2>Proyectos</h2>
-            <article></article>
+            <div>
+                <a href=""><figure></figure></a>
+
+            </div>
             <a class="link verMas" href="./src/pages/aboutMe.html">ver mas <i class="bi bi-arrow-right"></i> </a>
 
         </section>
+        
     </main>
+
     <footer>
         <!-- Lista de redes par el contact personal -->
         <section id="contact">
